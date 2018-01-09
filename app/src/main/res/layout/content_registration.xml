@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ef.cicit.RegistrationActivity"
+    tools:showIn="@layout/activity_registration"
+    android:background="#FFFFFF">
+
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="69dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignStart="@+id/user_name"
+        android:layout_below="@+id/user_name"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="E-mial" />
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_email"
+        android:layout_alignStart="@+id/user_email"
+        android:layout_below="@+id/user_email"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="password" />
+
+    <EditText
+        android:id="@+id/user_conPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_password"
+        android:layout_alignStart="@+id/user_password"
+        android:layout_below="@+id/user_password"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="confirm password" />
+
+    <EditText
+        android:id="@+id/user_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/user_conPassword"
+        android:layout_alignRight="@+id/user_conPassword"
+        android:layout_below="@+id/user_conPassword"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Company Name" />
+
+    <EditText
+        android:id="@+id/user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/user_company"
+        android:layout_alignRight="@+id/user_company"
+        android:layout_below="@+id/user_company"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Phone Number" />
+
+    <!--<EditText-->
+        <!--android:id="@+id/user_email"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/user_phone"-->
+        <!--android:layout_alignStart="@+id/user_phone"-->
+        <!--android:layout_below="@+id/user_phone"-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:hint="E-mail" />-->
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regLogin"
+        android:layout_alignStart="@+id/regLogin"
+        android:layout_below="@+id/user_phone"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="39dp"
+        android:onClick="onRegSignin"
+        android:text="@string/signup" />
+
+    <Button
+        android:id="@+id/regLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/user_phone"
+        android:layout_alignRight="@+id/user_phone"
+        android:layout_below="@+id/signup"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="18dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:onClick="onLogin"
+        android:text="@string/reg_login"
+        android:textSize="8dp" />
+
+</RelativeLayout>

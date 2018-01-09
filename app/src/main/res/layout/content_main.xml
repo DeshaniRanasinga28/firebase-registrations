@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ef.cicit.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#FFFFFF">
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/user_Password"
+        android:layout_alignLeft="@+id/user_Password"
+        android:layout_alignStart="@+id/user_Password"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <EditText
+        android:id="@+id/user_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="56dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginStart="74dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="onLogin"
+        android:text="@string/login"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+
+    <Button
+        android:id="@+id/signupText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:onClick="onSignUp"
+        android:text="@string/registration"
+        android:textSize="8dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:background="#FFFFFF"
+        android:onClick="onForgetPassword"
+        android:text="@string/forget_password"
+        android:textSize="8dp" />
+
+    <!--<com.facebook.login.widget.LoginButton-->
+        <!--android:id="@+id/login_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignEnd="@+id/user_Password"-->
+        <!--android:layout_alignRight="@+id/user_Password"-->
+        <!--android:layout_below="@+id/user_Password"-->
+        <!--android:layout_marginTop="70dp"-->
+        <!--android:text="Login with Facebook" />-->
+
+
+</RelativeLayout>
